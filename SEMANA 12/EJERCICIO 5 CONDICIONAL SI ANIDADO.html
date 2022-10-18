@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLETIN NOTAS SI ANIDADO</title>
+</head>
+<body>
+    <h3>BOLETIN NOTAS SI ANIDADO</h3>
+    <script type="text/Javascript">
+        var nota1, nota2, nota3, nota4, prom;
+        //
+        nota1=parseFloat(prompt("Ingrese nota 1 [1-5]"));
+        nota2=parseFloat(prompt("Ingrese nota 2 [1-5]"));
+        nota3=parseFloat(prompt("Ingrese nota 3 [1-5]"));
+        nota4=parseFloat(prompt("Ingrese nota 4 [1-5]"));
+        //
+        prom=(nota1+nota2+nota3+nota4)/4;
+        //
+        if (prom<=2.9) {
+            document.write("REPROBASTE"+ prom.toFixed(2));
+        }
+        else if (prom<=3.9){
+            document.write("APROBASTE"+ prom.toFixed(2));
+        }
+            
+        else if (prom<=5.0){
+            document.write("EXCELENTE!"+ prom.toFixed(2));
+        }
+        else {
+                document.write("DATOS ERRONEOS");
+            }
+            
+    </script>
+    </body>
+</html>

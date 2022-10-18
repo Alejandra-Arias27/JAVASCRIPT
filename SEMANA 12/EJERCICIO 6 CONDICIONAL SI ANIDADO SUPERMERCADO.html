@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+<body>
+    <h1>SUPERMERCADO EL VACANO YA!!</h1>
+    <h2>INGRESA TU COMPRA</h2>
+    <script>
+        var total=0;
+        var producto;
+        var cantidad;
+        var precio;
+        //ENTRADA
+        producto=prompt("Ingrese nombre del producto:");
+        precio=parseInt(prompt("Ingrese precio unitario:"));
+        cantidad=parseInt(prompt("Ingrese cantidad de comprada:"));
+        //PROCESO
+        total=cantidad*precio;
+        //SALIDA
+        alert("Su valor a pagar es:"+"\n"+total);
+        document.write("Su valor a pagar es:"+ total +"<br>"+"<br>");
+        //VALIDACIÓN MONTO A PAGAR
+        pago=parseInt(prompt("Ingrese monto efectivo pagado:"));
+        saldo=total-pago
+        if (pago==total) {
+            alert("PAGO CONFIRMADO, GRACIAS POR SU COMPRA");
+        }
+        else if (pago<total) {
+            alert("FALTA DINERO PARA CONFIRMAR SU COMPRA: $"+ saldo);
+        }
+        else {
+            alert("GRACIAS POR SU COMPRA, RECIBA SU CAMBIO:"+saldo);
+        }
+            document.write("GRACIAS POR SU COMPRA!!");
+    </script>
+</body>
+</html>
