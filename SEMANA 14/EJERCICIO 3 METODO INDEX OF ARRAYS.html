@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO INDEX OF</title>
+</head>
+<body>
+    <center>
+        <h1>METODO INDEX OF</h1>
+        <h3>BUSQUEDA DE ELEMENTOS ARRAY</h3>
+        <p id="thr"></p>
+        <script>
+            let teachers=["Alejandra","Carlos","Vivian","Andres","Steven","Amy","Jenny"];
+            for (i=0;i<teachers.length;i++){
+                if (teachers[i].toUpperCase().indexOf("A")===0){
+                    console.log(teachers[i]);
+                    document.write(teachers[i]+"<br>");
+                }
+            }
+            let index=teachers.indexOf("Alejandra");
+            document.write("Profesor se encuentra en el indice No.")
+            document.getElementById("thr").innerHTML=index;
+        </script>
+    </center>
+</body>
+</html>
